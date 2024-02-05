@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'M PLUS Code Latin', monospace !important;
+  letter-spacing: 0.07em;
+}
+
+
+body::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+.navbar-nav::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0.375rem #eeeeee77;
+  border-radius: 0.625rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3CA8C077;
+  outline: none;
+  border-radius: 0.625rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #14ff9977;
+}
+
+
+h2 {
+  color: rgb(170, 128, 228) !important;
+  text-shadow: 1px 0 0 #c7c7c7;
+  letter-spacing: 0.2em;
+}
+
+
+.project-link {
+  color: #d9ef68;
+}
+
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(169, 128, 228, .8);
+}
+
+.navbar-nav a, .project-link {
+  text-decoration: none;
+  /* color: #3CA8C0; */
+  font-weight: 600;
+  background-image: linear-gradient(to right,
+      rgba(169, 128, 228, .8),
+      rgba(69, 183, 183, .8) 70%,
+      rgba(223, 254, 254, .8) 90%);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 700ms ease;
+}
+
+.navbar-nav a:is(:focus-visible),
+.project-link:is(:focus-visible) {
+  outline: 1px solid #fff;
+  border-radius: .3125rem;
+}
+
+.navbar-nav a:is(:active),
+.project-link:is(:active) {
+  filter: brightness(110%);
+}
+
+.navbar-nav a:is(:hover, :focus-visible),
+.project-link:is(:hover, :focus-visible){
+  color: #d9ef68;
+  /* filter: brightness(90%); */
+
+  text-decoration: none;
+  background-size: 100% 4px;
+}
+
+.navbar-toggler {
+  color: #2FE3E377!important;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-collapse {
+    border-bottom: #3CA8C0 1px solid;
+    padding-bottom: 1rem;
+  }
+}
+
+
+.jumbotron {
+  background-image: url(Assets/Images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 1px 1px 0 #3CA8C0;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron::before {
+  z-index: 1;
+  content: ""; 
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(29, 34, 40, 0.651);
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-attribution {
+  font-size: .625rem;
+}
