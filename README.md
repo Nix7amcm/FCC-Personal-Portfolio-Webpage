@@ -2,7 +2,7 @@
 
 ### My Solution:
 
-[URL text here](URL)
+[nix7amcm.github.io/FCC-Personal-Portfolio-Webpage/](https://nix7amcm.github.io/FCC-Personal-Portfolio-Webpage/)
 
 * * *
 
@@ -16,9 +16,9 @@
 
 ![Tablet screenshot of web page](Assets/Solution-Images/tablet.png)
 
-#### <u>Mobile (with nav-link hover effect)</u>
+#### <u>Mobile</u>
 
-![Mobile screenshot of web page](Assets/Solution-Images/mobile-hover.png)
+![Mobile screenshot of web page](Assets/Solution-Images/mobile.png)
 
 * * *
 
